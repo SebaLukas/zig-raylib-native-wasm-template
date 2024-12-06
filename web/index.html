@@ -1,0 +1,26 @@
+<!-- SPDX-License-Identifier: MIT -->
+<!-- Copied from zozlib.js -->
+<!-- Copyright 2024 Alexey Kutepov <reximkut@gmail.com> and Raylib.js Developers -->
+
+<html>
+<head>
+  <title>Zig Raylib Wasm Example</title>
+  <style>
+    @font-face {
+      font-family: grixel;
+      src: url(fonts/acme_7_wide_xtnd.woff);
+    }
+  </style>
+</head>
+<body>
+  <canvas id='game'></canvas>
+  <script src="raylib.js"></script>
+  <script>
+    const raylibjs = new RaylibJs();
+    raylibjs.start({
+      wasmPath: 'example.wasm',
+      canvasId: 'game',
+    });
+  </script>
+</body>
+</html>
