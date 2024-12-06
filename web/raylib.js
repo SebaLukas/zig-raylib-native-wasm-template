@@ -119,6 +119,8 @@ class RaylibJs {
         document.title = cstr_by_ptr(buffer, title_ptr);
     }
 
+    CloseWindow() {}
+
     WindowShouldClose(){
         return false;
     }
